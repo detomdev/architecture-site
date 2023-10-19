@@ -111,11 +111,78 @@ html {
 .menu-icon {
 	width: 4rem;
 	height: 2.5rem;
-	background-color: #ccc;
 	position: absolute;
 	top: 50%;
 	right: 8rem;
 	transform: translateY(-50%);
 	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 100;
 }
+
+.line {
+	width: 4rem;
+	height: 0.2rem;
+	background-color: #ccc;
+}
+
+.navigation {
+	height: 100vh;
+	background-color: #0b0b14;
+	position: absolute;
+	top: 0;
+	left: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation a {
+	font-family: "Alfa Slab One", "Times New Roman", Times, serif;
+	color: #fff;
+	font-size: 5rem;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.navigation a::before {
+	content: "";
+	width: 15rem;
+	height: 0.5rem;
+	background-color: #dba81b;
+	position: absolute;
+	top: 50%;
+	left: -17rem;
+	transform: translateY(-50%);
+	transform: scale(0);
+	transform-origin: right;
+	transition: 0.3s;
+}
+
+.navigation a:hover::before {
+	transform: scale(1);
+}
+
+.navigation a::after {
+	content: "";
+	width: 15rem;
+	height: 0.5rem;
+	background-color: #dba81b;
+	position: absolute;
+	top: 50%;
+	right: -17rem;
+	transform: translateY(-50%);
+	transform: scale(0);
+	transform-origin: left;
+	transition: 0.3s;
+}
+
+.navigation a:hover::after {
+	transform: scale(1);
+}
+
 /* End Container */
