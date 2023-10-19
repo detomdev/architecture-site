@@ -107,4 +107,15 @@ html {
 	font-size: 1.6rem;
 	color: #ccc;
 }
+
+.menu-icon {
+	width: 4rem;
+	height: 2.5rem;
+	background-color: #ccc;
+	position: absolute;
+	top: 50%;
+	right: 8rem;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
 /* End Container */
