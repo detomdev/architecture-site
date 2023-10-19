@@ -43,7 +43,6 @@ html {
 	transform: translateY(-50%);
 }
 
-/* End Navbar */
 .logo1 {
 	width: 6rem;
 	height: 6rem;
@@ -126,27 +125,75 @@ html {
 	width: 4rem;
 	height: 0.2rem;
 	background-color: #ccc;
+	transition: all 0.3s;
+}
+
+.change .line-1 {
+	width: 55%;
+	transform: rotateZ(-15deg) translate(-0.2rem, 0.8rem);
+}
+
+.change .line-3 {
+	width: 55%;
+	transform: rotateZ(15deg) translate(-0.2rem, -0.8rem);
 }
 
 .navigation {
 	height: 100vh;
 	background-color: #0b0b14;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: -100vh;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	transition: all 0.3s;
+	/* z-index: 50; */
+}
+
+.change .navigation {
+	top: 0;
 }
 
 .navigation a {
-	font-family: "Alfa Slab One", "Times New Roman", Times, serif;
+	font-family: "Roboto Slab", "Times New Roman", Times, serif;
 	color: #fff;
 	font-size: 5rem;
 	letter-spacing: 0.3rem;
 	text-transform: uppercase;
 	margin-bottom: 1rem;
 	position: relative;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.change .navigation a {
+	opacity: 1;
+	visibility: visible;
+}
+
+.change .navigation a:nth-child(1) {
+	transition: all 0.3s 0.3s;
+}
+
+.change .navigation a:nth-child(2) {
+	transition: all 0.3s 0.4s;
+}
+
+.change .navigation a:nth-child(3) {
+	transition: all 0.3s 0.5s;
+}
+
+.change .navigation a:nth-child(4) {
+	transition: all 0.3s 0.6s;
+}
+
+.change .navigation a:nth-child(5) {
+	transition: all 0.3s 0.7s;
+}
+
+.change .navigation a:nth-child(6) {
+	transition: all 0.3s 0.8s;
 }
 
 .navigation a::before {
@@ -184,5 +231,32 @@ html {
 .navigation a:hover::after {
 	transform: scale(1);
 }
+/* End Navbar */
+/* Landing */
+.landing {
+	height: 90vh;
+	position: relative;
+}
+.landing-img {
+	width: 92%;
+	height: 70vh;
+	position: absolute;
+	top: 11rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
+.landing-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.3;
+}
+
+.banner {
+	position: absolute;
+	bottom: 15rem;
+	left: 20rem;
+}
+/* End Landing */
 /* End Container */
