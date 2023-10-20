@@ -258,5 +258,41 @@ html {
 	bottom: 15rem;
 	left: 20rem;
 }
+
+.banner-heading {
+	font-size: 8rem;
+	color: #fff;
+}
+
+.banner-heading span {
+	font-family: "Roboto Slab", "Times New Roman", Times, serif;
+	font-size: 8rem;
+	color: #dba81b;
+	letter-spacing: 0.5rem;
+}
+
+.banner-content {
+	align-items: center;
+}
+
+.banner-content p {
+	width: 30rem;
+	font-size: 1.5rem;
+	color: #fff;
+	margin-right: 2rem;
+	line-height: 1.5;
+}
+
+.banner-content button {
+	width: 15rem;
+	height: 5rem;
+	background-color: transparent;
+	border: 0.3rem solid #fff;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
 /* End Landing */
 /* End Container */
