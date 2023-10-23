@@ -11,6 +11,9 @@
 html {
 	font-size: 62.5%;
 }
+body {
+	background-color: #202020;
+}
 
 .width {
 	width: 100%;
@@ -235,9 +238,10 @@ html {
 /* End Navbar */
 /* Landing */
 .landing {
-	height: 90vh;
+	height: 95vh;
 	position: relative;
 }
+
 .landing-img {
 	width: 92%;
 	height: 70vh;
@@ -296,30 +300,26 @@ html {
 	cursor: pointer;
 }
 /* End Landing */
-
 /* About */
 .about {
-	height: 75vh;
+	height: 80vh;
 	background-color: #313133;
 	align-items: center;
 	justify-content: space-around;
 	position: relative;
 }
 
-.about-left h1,
-p {
-	width: 40rem;
-}
-
 .about-left h1 {
 	font-size: 5rem;
 	color: #fff;
+	width: 50rem;
 	margin-bottom: 6rem;
 }
 
 .about-left p {
 	font-size: 2rem;
 	color: #fff;
+	width: 50rem;
 	margin-bottom: 5rem;
 }
 
@@ -365,6 +365,7 @@ p {
 	border-right: 1rem solid #dba81b;
 	text-align: right;
 	padding-right: 2rem;
+	padding-top: 1rem;
 }
 
 .section-bottom h1 {
@@ -372,7 +373,6 @@ p {
 	font-size: 6rem;
 	color: #555;
 	letter-spacing: 0.5rem;
-	padding-top: 4rem;
 	text-transform: uppercase;
 }
 
@@ -386,17 +386,119 @@ p {
 /* Projects */
 .projects {
 	height: 100vh;
+	position: relative;
+}
+
+.projects-heading {
+	font-size: 6rem;
+	color: #fff;
+	margin: 7rem 0 10rem 9rem;
+	letter-spacing: 0.2rem;
+}
+
+.cards {
+	width: 90%;
+	margin: auto;
 }
 
 .card {
 	width: 32rem;
 	height: 50rem;
+	margin-right: 2.5rem;
+	cursor: pointer;
+	position: relative;
 }
 
 .card img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.card-content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: background-color 0.6s;
+}
+
+.card:hover .card-content {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.card-content::before {
+	content: "";
+	width: 92%;
+	height: 0.1rem;
+	background-color: #dba81b;
+	position: absolute;
+	left: 0;
+	top: 2rem;
+	transform: scale(0);
+	transform-origin: left;
+	transition: transform 0.8s;
+}
+
+.card:hover .card-content::before {
+	transform: scale(1);
+}
+
+.card-content::after {
+	content: "";
+	width: 0.1rem;
+	height: 94%;
+	background-color: #dba81b;
+	position: absolute;
+	left: 2rem;
+	top: 0;
+	transform: scale(0);
+	transform-origin: top;
+	transition: transform 0.8s;
+}
+
+.card:hover .card-content::after {
+	transform: scale(1);
+}
+
+.card-content h1 {
+	font-size: 2rem;
+	color: #fff;
+	position: absolute;
+	top: 4rem;
+	left: 4rem;
+	width: 15rem;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.card:hover .card-content h1 {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s 0.6s;
+}
+
+.card-content p {
+	font-size: 1.6rem;
+	color: #fff;
+	position: absolute;
+	top: 13rem;
+	left: 4rem;
+	width: 17rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+
+.card:hover .card-content p {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s 0.6s;
+}
+
+.designs {
+	right: 12rem;
 }
 /* End Projects */
 
