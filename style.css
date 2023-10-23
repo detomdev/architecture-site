@@ -569,4 +569,59 @@ body {
 }
 /* End customers */
 
+/* Contacts */
+.contact {
+	height: 25rem;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.contact-content {
+	width: 80%;
+	justify-content: space-evenly;
+}
+
+.contact-content h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	columns: #ccc;
+}
+
+.contact-content input {
+	width: 45rem;
+	height: 4rem;
+	background-color: transparent;
+	padding: 1.5rem 1.5rem 2.2rem 0;
+	border: none;
+	border-bottom: 0.1rem solid #777;
+	font-size: 1.8rem;
+	color: #ccc;
+	transition: border-bottom 0.3s;
+	cursor: pointer;
+}
+
+.contact-content input:hover {
+	border-bottom: 0.1rem solid #dba81b;
+}
+
+.contact-content input::placeholder {
+	color: #ccc;
+	letter-spacing: 0.1rem;
+}
+
+.contact-right {
+	position: relative;
+}
+
+.contact-right i {
+	font-size: 1.8rem;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	color: #ccc;
+	cursor: pointer;
+}
+/* End Contacts */
+
 /* End Container */
