@@ -680,7 +680,139 @@ body {
 	font-size: 1.6rem;
 	color: #ccc;
 }
-
 /* End Footer */
 
 /* End Container */
+
+/* Responsive Design */
+@media (max-width: 1700px) {
+	.banner {
+		left: 12rem;
+	}
+
+	.about-right {
+		margin-right: 20rem;
+	}
+
+	.frame {
+		width: 45rem;
+		height: 30rem;
+		right: 20rem;
+	}
+
+	.about-img-wrapper {
+		width: 45rem;
+		height: 30rem;
+		right: 13rem;
+	}
+
+	.experience {
+		right: 20rem;
+	}
+
+	.projects {
+		height: 100%;
+	}
+
+	.cards {
+		width: 80%;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-bottom: 25rem;
+	}
+
+	.card {
+		margin: 1.5rem;
+	}
+
+	.customers-content {
+		width: 90%;
+	}
+
+	.client {
+		right: 20rem;
+	}
+
+	.contact-content {
+		width: 90%;
+	}
+
+	.brand-footer {
+		left: 16%;
+	}
+
+	.copyright {
+		right: 16%;
+	}
+}
+
+@media (max-width: 1400px) {
+	html {
+		font-size: 55%;
+	}
+
+	.frame {
+		width: 40rem;
+		height: 25rem;
+		right: 15rem;
+	}
+
+	.about-img-wrapper {
+		width: 40rem;
+		height: 25rem;
+		right: 8rem;
+	}
+
+	.experience {
+		right: 12rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	html {
+		font-size: 49%;
+	}
+
+	.about-left p {
+		width: 40rem;
+	}
+
+	.customers-content {
+		width: 100%;
+	}
+
+	.client {
+		right: 10rem;
+	}
+
+	.contact-content {
+		width: 100%;
+	}
+
+	.brand-footer {
+		left: 10%;
+	}
+
+	.copyright {
+		right: 10%;
+	}
+}
+
+@media (max-width: 900px) {
+	html {
+		font-size: 45%;
+	}
+
+	.search-bar input {
+		width: 30rem;
+	}
+
+	.banner-heading {
+		font-size: 7rem;
+	}
+
+	.banner-heading span {
+		font-size: 7rem;
+	}
+}
+/* End Responsive Design */
